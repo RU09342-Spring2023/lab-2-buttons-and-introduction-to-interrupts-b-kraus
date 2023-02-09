@@ -76,4 +76,12 @@ Then load up Energy Trace and perform the similar capture of Power with the LED 
 
 
 # Screenshots and Answers to Questions
-**Replace this section with your screenshots of Energy Trace and provide some reasoning as to Questions 1 and 2 in the Power consumption of the Interrupts Section.**
+The Polling Example:
+![Screenshot (13)](https://user-images.githubusercontent.com/122136231/217939565-44c7dd81-1609-42ce-8fa2-f255b13eb9c7.png)
+The Interrupt Example:
+![Screenshot (15)](https://user-images.githubusercontent.com/122136231/217939503-05909b68-2f1a-479e-85f5-58cf9626b5f2.png)
+
+1. What is causing the bias/baseline in the polling example to be higher than the interrupt example.
+The polling example consumed more energy because it has to check every register to see if the button was pushed, while the interrupt tells the CPU when the button is pushed and does not check unless a flag is raised. 
+2. Even with the LED unplugged, why is there still power increases when you press the button?
+I think its because the LED connected in parallel????
