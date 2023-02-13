@@ -6,6 +6,9 @@
  */
 
 #include <msp430.h>
+#define ARMED 0
+#define WARNING 1
+#define ALARM
 
 void gpioInit();
 
@@ -22,7 +25,7 @@ int main(void)
 
 void gpioInit()
 {
-         P1DIR |= BIT0;             // Configure P1.0 to an Output
+       P1DIR |= BIT0;             // Configure P1.0 to an Output
        P6DIR |= BIT6;              // Configure P6.6 to an Output
        P2DIR &= ~BIT3;             // Configure P2.3 to an Input
        P4DIR &= ~BIT1;             // Configure P4.1 to an Input
