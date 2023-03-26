@@ -1,0 +1,6 @@
+The code basically runs as the following:
+-If the button is not pressed, then the green LED will continue to blink and will stay in the armed state
+-If the button is presed, then the system enters the warning state and the red led begins to blink rapidly 
+-As time passes, the i value increases until it reaches 20 where it leaves the warning state to alarm
+-If the button is pressed before the i value reaches 20 then it enter the armed state again
+-The alarmed state is a solid button and you can only get out of it if you press the opposite button
